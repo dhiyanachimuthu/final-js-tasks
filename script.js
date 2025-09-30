@@ -12,10 +12,12 @@
         let city = document.getElementById("city").value.trim();
       
        
-        if (!name||!birthYear||!city) throw "Please fill all fields correctly!";
-
+        if (!name||!birthYear||!city)
+         throw "Please fill all fields correctly!";
+Year=parseInt(birthYear);
         document.getElementById("profileOutput").innerText =
           "Profile Saved::"+ name + " , "+city+ " , " + birthYear;
+          
       } 
       catch (error) 
       {
@@ -28,14 +30,12 @@
       try {
         if (!birthYear) throw " Fill all the fields completely!";
         let currentYear = new Date().getFullYear();
-         let birthYear = document.getElementById("birthYear").value.trim();
-         let Year=parseInt(birthYear);
-        // let age = currentYear - birthYear;
+        birthYear = document.getElementById("birthYear").value.trim();
+         Year=parseInt(birthYear);
         let age = currentYear - Year;
-
-        let eligibility = (age >= 18) ? "Eligible (18+)" : "Not eligible to access this website!!(age<18)";
+        let eligibility = (age >= 18) ? "Eligible (18+)" : "You are not eligible to access this website since you are a minor.";
         document.getElementById("ageOutput").innerText =
-          name+"You are"+ age +"years old"+ eligibility;
+          name+"You are"+ age +"years old"+" & "+ eligibility;
       } catch (error) {
         document.getElementById("ageOutput").innerText = error;
       }

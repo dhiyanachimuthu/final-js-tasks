@@ -1,6 +1,5 @@
 .section{
     background-color: bisque;
-    
 }
 input{
     border-radius: 5px;
@@ -12,4 +11,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+button{
+    background-color: coral;
+}
+button:hover{
+    background-color: rgb(221, 221, 199);
 }
