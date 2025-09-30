@@ -1,0 +1,15 @@
+.section{
+    background-color: bisque;
+    
+}
+input{
+    border-radius: 5px;
+}
+body{
+    background-color: rgb(255, 244, 230);
+} 
+#sd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
