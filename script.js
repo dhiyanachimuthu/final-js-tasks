@@ -1,8 +1,8 @@
     let student = {
-      name: "",
-      birthYear: "",
-      city: ""
-    };
+      name: "DHIYA",
+      birthYear: "2000",
+      city: "TIRUPUR"
+    }
 
     function saveProfile()
      {
@@ -10,7 +10,6 @@
         let name = document.getElementById("name").value.trim();
         let birthYear = document.getElementById("birthYear").value.trim();
         let city = document.getElementById("city").value.trim();
-      
        
         if (!name||!birthYear||!city)
          throw "Please fill all fields correctly!";
