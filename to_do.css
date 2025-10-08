@@ -1,0 +1,156 @@
+body {
+  background-color: #e3f2fd;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  text-align: center;
+}
+
+#boxing {
+  margin-top: 50px;
+}
+
+#h1 {
+  color: #1565c0;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+#text{
+  width: 280px;
+  height: 32px;
+  margin: 8px 5px;
+  border: 1px solid #90caf9;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #222;
+}
+#dueTime{
+  width: 280px;
+  height: 32px;
+  margin: 8px 5px;
+  border: 1px solid #90caf9;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #222;
+}
+
+#text:focus{
+  outline: none;
+  border-color: #1976d2;
+}
+#dueTime:focus {
+  outline: none;
+  border-color: #1976d2;
+}
+
+#add {
+  width: 70px;
+  height: 32px;
+  background-color: #64b5f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#add:hover {
+  background-color: #1976d2;
+}
+
+#taskBtn {
+  margin-top: 15px;
+  padding: 8px 15px;
+  background-color: #42a5f5;
+  border: none;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#taskBtn:hover {
+  background-color: #1e88e5;
+}
+
+.task-box {
+  background-color: #ffffff;
+  color: #222;
+  border: 1px solid #bbdefb;
+  border-radius: 8px;
+  width: 550px;
+  margin: 12px auto;
+  padding: 12px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.task-box span {
+  flex: 1;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.completed-tag {
+  background-color:rgb(33, 223, 65);
+  color: white;
+  font-size: 12px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.task-box button {
+  margin-left: 8px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  color: white;
+}
+
+.task-box button.complete {
+  background-color:rgb(7, 172, 7);
+}
+
+.task-box button.delete {
+  background-color:rgb(231, 62, 62);
+}
+
+.btn-section {
+  margin-top: 20px;
+}
+
+.viewBtn{
+  margin: 5px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #90caf9;
+  cursor: pointer;
+  border: none;
+  color: #0d47a1;
+  font-size: 14px;
+}
+
+.viewBtn:hover{
+  background-color: #64b5f6;
+  color: white;
+}
+
+.hidden{
+  display: none;
+}
