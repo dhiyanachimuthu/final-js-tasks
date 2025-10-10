@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(252, 243, 234);
+    font-family: cursive;
+}
+#div{
+    border-radius: 15px;
+    background-color: bisque;
+    box-shadow:10px 10px 12px coral;
+    width: 400px;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   justify-content: center;  
+   margin-top: 250px;
+   margin-left: 500px;
+   padding:10px 15px;
+}
+button{
+    background-color: rgb(238, 166, 144);
+    border-radius: 10px;
+    font-size: 16px;
+}
+button:hover{
+    background-color: rgb(255, 83, 83);
+    color:white;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label>FILE EXTENSION</label>
+        <input type="text" id="ext">
+        <button onclick=replace()>CLICK</button>
+        <p id="output"></p>
+    </div>
+    <script>
+        function replace()
+    {
+        var x=document.getElementById("ext").value;
+        var z=x.replace(x.slice(x.indexOf('.')),".js");
+        document.getElementById("output").innerText=z;
+    }
+    </script>
+</body>
+</html>

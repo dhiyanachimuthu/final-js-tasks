@@ -1,0 +1,27 @@
+.section{
+  background-color: bisque;
+  background-color: white;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 12px rgb(255, 121, 121);
+  width: 300px;
+  text-align: center;
+}
+body{
+  font-family:cursive;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color: rgb(250, 182, 170);
+  margin-top:190px;
+}
+input{
+    border-radius: 5px;
+}
+
+button{
+    background-color: coral;
+}
+button:hover{
+    background-color: rgb(221, 221, 199);
+}

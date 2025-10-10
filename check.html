@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="num1" type="number">
+    <input id="num2" type="number">
+    <button id="btn" onclick="check()">CHECK</button>
+    <p id="result"></p>
+      
+    <script>
+    function check(){
+    const x = document.getElementById("num1").value;
+    const y = document.getElementById("num2").value;
+
+    if (x === "" || y === "") 
+    {
+        document.getElementById("result").textContent = "Please enter two valid numbers";
+        return;
+    }
+
+    const xNum = Number(x);
+    const yNum = Number(y);
+    const z = (xNum ^ yNum) < 0;
+
+    document.getElementById("result").textContent = z ? "True" : "False";}
+    </script>
+</body>
+</html>
