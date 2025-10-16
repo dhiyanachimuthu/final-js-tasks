@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vending Machine</title>
+</head>
+<link rel="stylesheet" href="vendingmachine.css">
+<body>
+
+  <h2> Vending Machine</h2>
+
+  <div id="vending"></div>
+
+  <div class="bill">
+    <p>Total: ₹<span id="totalAmount">0</span></p>
+
+    <label for="couponInput">Coupon Code:</label>
+    <input type="text" id="couponInput" placeholder="Enter coupon code">
+    <button onclick="applyDiscount()">Apply Coupon</button>
+
+    <p id="discountedAmount"></p>
+
+    <label>Mode of Payment:
+    <select id="payment">
+      <option value="">Select the type of payment</option>
+      <option value="Cash">Cash</option>
+      <option value="Card">Card</option>
+      <option value="UPI">UPI</option>
+    </select>
+    </label>
+
+  <div id="pinContainer" style="display:none;">
+      <label for="pinInput">Enter PIN:</label>
+    <input type="password" id="pinInput" placeholder="Enter 6-digit PIN">
+  </div>
+
+    <button onclick="completePayment()">Complete Payment</button>
+
+  <div id="message"></div>
+  </div>
+
+  <script src="vendingmachine.js"></script>
+</body>
+</html>
+
+
+
